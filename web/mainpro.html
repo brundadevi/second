@@ -1,0 +1,311 @@
+<html>
+<head>
+<script>
+
+function getd()
+{
+
+var namesong =document.getElementById("song").value;
+
+document.getElementById("p1").innerHTML=namesong;
+
+if(namesong.match("friend1"))
+{
+var audio =new Audio("friend1.mp3");
+audio.oncanplaythrough=function(){
+audio.play();
+}
+audio.loop=true;
+audio.onended=function(){
+audio.play();
+}
+var info='Movie: Zootopia<br>'+
+'Written by Sia<br>'+
+'Singer: Shakira';
+
+
+document.getElementById("p2").innerHTML=info;
+}
+else if(namesong.match("tryeverything"))
+{
+var audio =new Audio("tryeverything.mp3");
+audio.oncanplaythrough=function(){
+audio.play();
+}
+audio.loop=true;
+audio.onended=function(){
+audio.play();
+}
+
+var info='-------lyrics--------<br>'+
+'I messed up tonight<br>'+
+'I lost another fight <br>'+
+'I still  just start again<br>'+
+'i keep falling down<br>'+
+'Nobody learns without getting it wrong<br>'+
+'I always get up now to see whats next<br>'+
+'Birds dont just fly<br>'+
+'They fall down and get up<br>'+
+'Nobody learns without getting it won<br>'+
+'I wont give up no I wont give in<br>'+
+'Till I reach the end<br>'+
+'And then Ill start again<br>'+
+'Though Im on the lead<br>'+
+'I wanna try everything<br>'+
+'I wanna try even though I could fail<br>'+
+'I wont give up no I wont give in<br>'+
+'Till I reach the end<br>'+
+'And then Ill start again<br>'+
+'No I wont leave<br>'+
+'I wanna try everything<br>'+
+'I wanna try even though I could fail<br>'+
+'Oh oh try everything<br>';
+
+document.getElementById("p2").innerHTML=info;
+
+var data='Movie: Zootopia<br>'+
+'Written by Sia<br>'+
+'Singer: Shakira';
+
+
+document.getElementById("data1").innerHTML=data;
+
+}
+else if(namesong.match("friend"))
+{
+var audio =new Audio("friend.mp3");
+audio.oncanplaythrough=function(){
+audio.play();
+}
+audio.loop=true;
+audio.onended=function(){
+audio.play();
+}
+
+var info='-------lyrics--------<br>'+
+'Paadam etu potunna, payanam endakaina<br>'+
+'Adugu thadabadutunna, thodu raana<br>'+
+'Chinni yedabataina, kanta thadi pedutunna<br>'+
+'Gunde prati layalona, nenu lena<br>'+
+'Ontaraina otamaina, venta nadiche needavena<br>'+
+'O my friend, thadi kannulane, thudichina nesthama<br>'+
+'O my friend, vodidudukulalo nilichina snehama…<br>'+
+'Amma vodilo, leni paasam, nestham alle, allukundi<br>'+
+'Janmakantha, theeriponi, mamathalenno, panchuthondi<br>'+
+'Meeru meeru nunchi, mana sneha geetham, yera yeralloki maare<br>'+
+'Mohamatale leni, kale jaaluvare…<br>'+
+'Ontaraina otamaina, venta nadiche needa neeve<br>'+
+'O my friend, thadi kannulane thudichina nesthama<br>'+
+'O my friend, vodidudukulalo nilichina snehama…<br>'+
+'Vaana vasthe, kagithale, padavalayye gynapakale<br>'+
+'Ninnu chusthe, chinnanaati, chethalanni chentha vaale<br>'+
+'Gilli-kajjalenno ila penchukuntu, thullinthallo thele sneham<br>'+
+'Modalo tudalo telipe mudi veedakunde…<br>'+
+'Ontaraina otamaina, venta nadiche needa neede<br>'+
+'O my friend thadi kannulane thudichina nesthama<br>'+
+'O my friend vodidudukulalo nilichina snehama<br>';
+
+document.getElementById("p2").innerHTML=info;
+
+var data='Movie: HappyDays<br>'+
+'Music by Mickey J Meyer<br>'+
+'Singer: Karthik';
+
+
+document.getElementById("data1").innerHTML=data;
+
+}
+else if(namesong.match("teresangyaara"))
+{
+var audio =new Audio("teresangyaara.mp3");
+audio.oncanplaythrough=function(){
+audio.play();
+}
+audio.loop=true;
+audio.onended=function(){
+audio.play();
+}
+var info='Directed by	Tinu Suresh Desai<br>'+
+'Written by Manoj Muntashir<br>'+
+'Starring	Akshay Kumar and Ileana D"cruz<br>'+
+'Singer     Atif Aslam';
+
+
+document.getElementById("p2").innerHTML=info;
+}
+
+else if(namesong.match("pehlinazar"))
+{
+var audio =new Audio("pehlinazar.mp3");
+audio.oncanplaythrough=function(){
+audio.play();
+}
+audio.loop=true;
+audio.onended=function(){
+audio.play();
+}
+
+var info='Written by Pritam Chakraborty <br>'+
+'Movie: Race<br> '+
+'Singer: Atif Aslam';
+
+
+document.getElementById("p2").innerHTML=info;
+}
+
+
+else if(namesong.match("perfect"))
+{
+var audio =new Audio("perfect.mp3");
+audio.oncanplaythrough=function(){
+audio.play();
+}
+audio.loop=true;
+audio.onended=function(){
+audio.play();
+}
+
+var info='By One Direction<br>'+
+'Album: Made in the A.M.<br>'+
+'Genre: Pop';
+
+
+document.getElementById("p2").innerHTML=info;
+}
+
+
+}
+
+
+
+
+
+
+</script>
+<style>
+body
+{
+background:url(bg1.jpg);
+background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+
+}
+
+.button {
+    background-color: #ffffff; 
+    border: none;
+    color: green;
+    border-radius:48px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight:bold
+}     
+         
+#one{
+height:60;
+//width:60;
+//margin-left:200px;
+//margin-top:30px;
+//background-color:gr;
+}
+
+#two{
+//width:1300;
+//margin-left:280px;
+//margin-top:80px;
+height:60;
+
+font-size:17;
+background-color:white;
+}
+
+#three{
+width:240;
+height:300;
+//margin-left:280px;
+//margin-top:170px;
+//background-color:pink;
+float:left;
+}
+
+#four{
+height:300;
+width:653;
+float:left;
+}
+
+#five{
+width:440;
+height:500;
+
+//margin-left:1000px;
+//margin-top:200px;
+//background-color:grey;
+float:left;
+font-size:25
+}
+
+.ima1 {
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
+}
+.gap-10 {
+				width:100%;
+				height:5px;
+			}
+</style>
+</head>
+
+<body>
+<div id="one"> 
+
+<font color ="pink" style="italic" size="4">
+<center><H1>WELCOME TO MUSICMINE.COM </H1></center>
+</font>
+</div>
+
+<div id="two"> <h2>	
+		<a href="mainpro.html" style="margin-right:120px">HOME</a>
+		<a  href="login.html"style="margin-right:120px">LOGOUT</a>	
+</h2>
+</br>
+</div>
+<div id="three"> 
+<img src="images\top10.jpg" height="200" width="240"/>
+<marquee direction="down" height="350" width="240"> 
+<a href="http://gaana.com/song/shape-of-you-7"><img src="https://images.genius.com/b987a0d3e07d6f10d3c434bfb69a651f.1000x1000x1.jpg"width="240"></a>
+<a href="http://gaana.com/song/how-far-ill-goalessia-cara-version-2"><img src="https://images.genius.com/2309f6cbf6dec566ecb4aad05b32cd3e.500x500x1.jpg"width="240"></a>
+<a href="http://gaana.com/song/channa-mereya"><img src="https://1.bp.blogspot.com/-uPzHC7Htl4w/WAfMyjVbRfI/AAAAAAAAD9g/TJqQNakYt08FTY-BJr4U_QI3ACgnLnFdwCLcB/s400/channa-mereya-ae-dil-hai-mushkil.jpg"width="240"></a>
+<a href="http://gaana.com/song/humsafar-13"><img src="https://i.ytimg.com/vi/vIUp4CzOrpQ/hqdefault.jpg"width="240"></a>
+</marquee>
+</div>
+
+<div id="four"> 
+<br>
+
+<br><font size="5">
+<h3><pre>	Search the song you want to enjoy!!!</pre></h3>
+<form ><pre>
+		SEARCH:<input type ="text" id= "song" />
+
+				<input type="button" class="button" value="ENTER" onclick="getd()"/>
+</pre> </form>
+NOW PLAYING:
+<p id="p1"> </p>
+
+
+INFO:
+<p id="data1"> </p>
+
+</font></div>
+<div id="five" style="overflow:auto;"> 
+<p id="p2"> </p>
+
+</div>
+
+</body>
+</html>
